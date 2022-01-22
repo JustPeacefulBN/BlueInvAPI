@@ -16,7 +16,7 @@ public class InventoryGui {
     private List<Player> players = new ArrayList<>();
     private ClickSlotAction csa;
     private CloseInventoryAction cia;
-    HashMap<Inventory,InventoryType> typeputter = new HashMap<>();
+  
 	 public InventoryGui(String name) {
 		 this.name = name;
 	 }
