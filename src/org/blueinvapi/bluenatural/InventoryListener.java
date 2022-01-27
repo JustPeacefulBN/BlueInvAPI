@@ -23,13 +23,9 @@ public class InventoryListener implements Listener {
 			   e.setCancelled(true);
 			   int slot = e.getSlot();
 			   //GET SLOT PLAYER HAS CLICKED
-			   ItemSlotGui isg = new ItemSlotGui(slot);
-			   //CHECK IF PLAYER HAS CLICKED AN CLICK ACTION
-			   if(isg.getActionPutter().get(isg.getItem()).equals(e.getClick())) {
+			  
 				   GuiUtils.getInventoryGui(e.getInventory().getName()).getCsa().active(GuiUtils.getInventoryGui(e.getInventory().getName()), p, slot, e);
-			   }else {
-				   return;
-			   }
+			   
 			   
 	   }
 		}else {
